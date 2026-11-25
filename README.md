@@ -27,15 +27,14 @@ Screens are driven through CProcessing's `CP_Engine_SetNextGameState`, each expo
 
 ## My contribution
 
-Largest contributor on the team by commit count (103 of 239). Files I authored:
+I'm n4ddeer, one of the five team members. I worked on:
 
-- `src/vfx/bubbles.c` — the bubble particle system: spawning, per-frame update and draw, driven from cursor position with a separate manual-spawn path for scripted moments
-- `src/entities/bubblegun.c`, `src/entities/dirt.c`, `src/entities/roomba.c`
-- `src/systems/money.c`, `src/systems/sounds.c`, `src/systems/settings_options.c`
-- `src/core/gameover.c`, `src/core/settings.c`
-- `src/utils/debug.c` — debug overlay; `src/utils/img_font_init.c` — image and font loading
+- `src/entities/faucet.c`: the faucet and stream ability. Press W and the faucet rotates and fires a stream of droplets. Each droplet hit lowers the target's opacity (area-of-effect), with a cooldown timer and upgrades that can shorten it.
+- `src/systems/tutorial.c`: a step-by-step tutorial that walks you up to the start of day 1.
+- Game UI for the main menu, settings and game screens: fonts, layout, colour names and small touches like the leaderboard back button tooltip.
+- Cleanup: renamed functions across the solution, added `#pragma once`, and commented my files.
 
-Co-authored `mainmenu.c`, `plate.c`, `sponge.c`, `shop.c` and `tutorial.c`.
+My commits: https://github.com/n4ddeer/WeWashPl8/commits/master/?author=n4ddeer
 
 ## Build
 
